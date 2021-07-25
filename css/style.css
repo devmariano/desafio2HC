@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#202020;
+    background-size:cover;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+header {
+    background-color: rgb(26, 26, 26);
+    margin-top: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fab001;
+
+}
+
+
+.container-botoes {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    border-width: 100px;
+    
+}
+
+.container-botoes a {
+    width: fit-content;
+}
+
+.botao {
+    
+    width:100%;
+    padding: 12px 20px;
+    max-width: 200px;
+    background-color: #fab001;
+    color: rgb(26, 26, 26);
+    border: 0;
+    transition: background-color 0.2s;
+    font-size: 16px;
+    font-weight: 600;
+    height: fit-content;
+
+}
+
+.titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+  }
+  
+  .botao-topo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end
+  }
+
+.botao:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 6px #20212447;
+    background-color: #fae101;
+   
+}
+
+
+.container-cadastro {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 200px ;
+    box-sizing: border-box;
+}
+
+.container-cadastro a {
+    width: fit-content;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+form#formulario {
+    margin: 0px 20px;
+    color: #fab001;
+
+}
+
+.form-campos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.input {
+    height: 40px;
+    padding: 0px 20px;
+    background: #202020;
+    color: rgb(255, 255, 255);
+    border: 1px solid  #fab001;
+    margin-bottom: 30px;
+}
+
+.input:hover, :focus {
+    box-shadow: 0 1px 6px #20212447;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.container-cadastro table {
+    margin: 40px 20px;
+    color:rgb(26, 26, 26);
+    word-break: break-word;
+    
+}
+
+.container-cadastro table td, th {
+    width: 5%;
+}
+
+.container-cadastro table thead {
+    background-color:  #f1bb3c;
+    ;
+}
+
+.container-cadastro table thead tr th {
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.container-cadastro table tbody {
+    text-align: center;
+    font-weight: 300;
+    background-color: burlywood;
+}
+footer {
+    background-color: rgb(26, 26, 26);
+    color:#fab001;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+}
+footer.fixar-rodape{
+    bottom: 0;
+    left: 0;
+    padding-top: 15pt;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+  }

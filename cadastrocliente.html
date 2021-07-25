@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gestão de Cadastros</title>
+</head>
+<body>
+    <header>
+            <div class="titulo"><h1>CADASTRO DE CLIENTES</h1></div>
+            <div class="botao-topo"><a href="index.html"><button class="botao">VOLTAR</button></a></div>
+    </header>
+    <div class="container-cadastro">
+        <form action="#" method="post" id="formulario">
+            <div class="form-campos">
+                <div class="label-input">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="cpf">CPF (somente números)</label>
+                    <input type="number" name="cpf" id="cpf" placeholder="00000000000" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="nome@email.com" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="telefone">Telefone (somente números)</label>
+                    <input type="number" name="telefone" id="telefone" placeholder="DD999999999" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="cep">CEP</label>
+                    <input type="number" name="cep" id="cep" placeholder="0000000" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="endereco">Endereço completo</label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Rua/Numero/Bairro/Estado/UF" class="input" required />
+                </div>
+            </div>
+            <input type="submit" class="botao" value="Cadastrar Cliente" />
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>CEP</th>
+                    <th>Endereço</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-clientes">
+
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="js/cliente.js"></script>
+
+
+    <script>carrega();</script>
+    <footer class="fixar-rodape">
+        <p>Desenvolvido por Alexandre Mariano para #desafio 2 do HC - @2021 Todos os direitos reservados</p>
+    </footer>
+</body>

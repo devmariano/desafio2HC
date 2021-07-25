@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gestão de Cadastros</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>CADASTRO DE PRODUTOS</h1>
+        </div>
+        <div class="botao-topo"><a href="index.html"><button class="botao">VOLTAR</button></a></div>
+    </header>
+
+    <div class="container-cadastro">
+        <form action="#" method="post" id="formulario">
+            <div class="form-campos">
+                <div class="label-input">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome do Produto" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="descricao">Descrição</label>
+                    <input type="text" name="descricao" id="descricao" placeholder="Descrição do Produto" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="marca">Marca</label>
+                    <input type="text" name="marca" id="marca" placeholder="Marca do Produto" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" name="quantidade" id="quantidade" value="1" min="1" class="input" required />
+                </div>
+
+            </div>
+            <input type="submit" class="botao" value="Cadastrar Produto" />
+        </form>
+    </div>
+    <div class="container-cadastro">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Marca</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-produtos">
+
+            </tbody>
+        </table>
+
+    </div>
+    <script src="js/produto.js"></script>
+
+
+    <script>carrega();</script>
+
+    <footer class="fixar-rodape">
+        <p>Desenvolvido por Alexandre Mariano para #desafio 2 do HC - @2021 Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>
